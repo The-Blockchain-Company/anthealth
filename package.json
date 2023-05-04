@@ -1,6 +1,6 @@
 {
   "name": "anthealth",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "AWS CloudFormation, CloudFront CDN, S3, OpenAI ChatGPT integrated web app",
   "main": "index.js",
   "scripts": {
