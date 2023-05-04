@@ -1,0 +1,27 @@
+{
+  "name": "anthealth",
+  "version": "1.0.0",
+  "description": "AWS CloudFormation, CloudFront CDN, S3, OpenAI ChatGPT integrated web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Blockchain-Company/anthealth.git"
+  },
+  "keywords": [
+    "chatgpt",
+    "autogpt",
+    "openai"
+  ],
+  "author": "Robert Mourey Jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-Blockchain-Company/anthealth/issues"
+  },
+  "homepage": "https://github.com/The-Blockchain-Company/anthealth#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
