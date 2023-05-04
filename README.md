@@ -1,4 +1,6 @@
-# GPT App Template
+# AntHealth 
+
+GPT App Template
 
 An Altostra template for a web application that let users send prompts to one of OpenAI textual models.
 
