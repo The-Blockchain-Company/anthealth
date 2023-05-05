@@ -48,7 +48,9 @@ exports.handler = async (event) => {
         text: body.choices?.[0]?.text,
       }),
       headers: {
-        'Access-Control-Allow-Origin': '*'
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'Options,POST,GET'
       },
     }
   }
