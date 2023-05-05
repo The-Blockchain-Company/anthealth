@@ -49,7 +49,7 @@ body {
 
 .loader {
   border: 4px solid #f3f3f3;
-  border-top: 4px solid #5f5ff6;
+  border-top: 4px solid #5fe7f6;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -133,7 +133,7 @@ body {
   right: 0;
   width: 100%;
   height: 70px;
-  background-color: #f1f1f1;
+  background-color: #95d4d2;
 }
 
 .chat-form {
