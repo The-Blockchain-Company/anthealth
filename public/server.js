@@ -37,8 +37,8 @@ export async function prompt(message) {
   try {
     const response = await fetch(new URL('prompt', baseUrl), {
       method: 'POST',
+      credentials:'include',
       headers: {
-        'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ prompt: message }),
