@@ -137,7 +137,7 @@ body {
 }
 
 .chat-form {
-  background-color: white;
+  background-color: rgb(245, 238, 238);
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
