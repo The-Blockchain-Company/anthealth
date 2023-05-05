@@ -28,13 +28,14 @@ exports.handler = async (event) => {
       'https://api.openai.com/v1/completions', {
       method: 'POST',
       headers: {
+        'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
         Authorization: `Bearer ${apiKey}`,
       },
       body: {
         model: gptModel,
         prompt,
-        max_tokens: 2048,
+        max_tokens: 4096,
       }
     })
 
