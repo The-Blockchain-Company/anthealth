@@ -63,10 +63,10 @@ function addMessage(message) {
     return;
   }
 
-  const message = document.createElement("div");
-  message.classList.add("message");
-  message.innerHTML = `<p>${message}</p>`;
-  document.querySelector(".chat").appendChild(message);
+  const messages = document.createElement("div");
+  messages.classList.add("message");
+  messages.innerHTML = `<p>${message}</p>`;
+  document.querySelector(".chat").appendChild(messages);
 }
 
 export function onKeyUp(field) {
