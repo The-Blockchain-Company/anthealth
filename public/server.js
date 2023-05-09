@@ -1,50 +1,52 @@
-import { baseUrl as apiUrl } from './api.js';
+import { baseUrl as apiUrl } from "./api.js";
 
-// In order to append path using the URL constructor - the "baseURL" must end with a '/'
-const normalized = apiUrl.endsWith('/')
+// In order to append path using the URL constructor - the "baseURL" must end with a "/"
+const normalized = apiUrl.endsWith("/")
   ? apiUrl
-  : apiUrl + '/'
+  : apiUrl + "/"
 
 const baseUrl = new URL(normalized);
 
 export async function getStatus() {
   try {
-    const response = await fetch(new URL('status', baseUrl));
+    const response = await fetch(new URL("status", baseUrl), {
+      method: "GET",
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
+      },
+    });
     throwIfError(response)
     return await response.json()
   } catch (err) {
-    console.error('Failed to get status', err)
+    console.error("Failed to get status", err)
   }
 }
 
 export async function install(apiKey) {
   try {
-    const response = await fetch(new URL('install', baseUrl), {
-      method: 'POST',
+    const response = await fetch(new URL("install", baseUrl), {
+      method: "POST",
       headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'Content-Type',
-        'Access-Control-Allow-Methods': 'Options,POST,GET',
-        'Content-Type': 'application/json',
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({ apiKey }),
     });
 
     throwIfError(response)
   } catch (err) {
-    console.error('Failed to install', err)
+    console.error("Failed to install", err)
   }
 }
 
 export async function prompt(message) {
   try {
-    const response = await fetch(new URL('prompt', baseUrl), {
-      method: 'POST',
+    const response = await fetch(new URL("prompt", baseUrl), {
+      method: "POST",
       headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'Content-Type',
-        'Access-Control-Allow-Methods': 'Options,POST,GET',
-        'Content-Type': 'application/json',
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({ prompt: message }),
     });
@@ -52,7 +54,7 @@ export async function prompt(message) {
     throwIfError(response)
     return await response.json()
   } catch (err) {
-    console.error('Failed to prompt', err)
+    console.error("Failed to prompt", err)
   }
 }
 

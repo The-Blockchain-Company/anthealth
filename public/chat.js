@@ -1,4 +1,4 @@
-import { getStatus, install, prompt } from './server.js';
+import { getStatus, install, prompt } from "./server.js";
 
 let overlay
 let loader
@@ -24,14 +24,14 @@ export async function loadAll() {
     connectDialog = document.querySelector(".connect-dialog")
     connectDialog.style.display = "block";
 
-    apiKeyField = document.querySelector('.apiKey-field');
-    connectButton = document.querySelector('.connect-btn');
+    apiKeyField = document.querySelector(".apiKey-field");
+    connectButton = document.querySelector(".connect-btn");
     connectButton.addEventListener("click", connect);
   }
 
-  messageField = document.querySelector('.message-field');
-  sendMessageButton = document.querySelector('.send-message-btn');
-  sendMessageButton.addEventListener('click', sendMessage);
+  messageField = document.querySelector(".message-field");
+  sendMessageButton = document.querySelector(".send-message-btn");
+  sendMessageButton.addEventListener("click", sendMessage);
 }
 
 async function connect(event) {
@@ -51,7 +51,7 @@ async function sendMessage(event) {
   event.preventDefault();
   addMessage(messageField.value)
   const messageText = messageField.value;
-  messageField.value = '';
+  messageField.value = "";
   sendMessageButton.disabled = true;
 
   const response = await prompt(messageText)
@@ -63,17 +63,17 @@ function addMessage(text) {
     return;
   }
 
-  const message = document.createElement('div');
-  message.classList.add('message');
+  const message = document.createElement("div");
+  message.classList.add("message");
   message.innerHTML = `<p>${text}</p>`;
-  document.querySelector('.chat').appendChild(message);
+  document.querySelector(".chat").appendChild(message);
 }
 
 export function onKeyUp(field) {
-  if(field === 'apiKey') {
+  if(field === "apiKey") {
     connectButton.disabled = !apiKeyField.value.length
   }
-  if(field === 'message') {
+  if(field === "message") {
     sendMessageButton.disabled = !messageField.value.length
   }
 }
