@@ -178,8 +178,8 @@
 				"Prompt01": {
 					"type": "resource.compute.function",
 					"name": "prompt",
-					"memory": 512,
-					"timeout": 29,
+					"memory": 1024,
+					"timeout": 60,
 					"entryPoint": "functions/prompt.handler",
 					"runtime": "nodejs16.x",
 					"packageType": "zip",

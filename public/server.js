@@ -22,6 +22,9 @@ export async function install(apiKey) {
     const response = await fetch(new URL('install', baseUrl), {
       method: 'POST',
       headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'Options,POST,GET',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ apiKey }),
