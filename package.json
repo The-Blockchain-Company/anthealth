@@ -1,6 +1,6 @@
 {
   "name": "anthealth",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "AWS CloudFormation, CloudFront CDN, S3, OpenAI ChatGPT integrated web app",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

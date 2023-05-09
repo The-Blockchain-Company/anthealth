@@ -21,7 +21,7 @@ body {
 }
 
 .btn {
-  background-color: #5f5ff6;
+  background-color: #60c9f3;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -40,7 +40,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(150,150,150,0.7);
+  background-color: rgba(150,150,150,0.25);
   display: flex;
   justify-content: center;
   align-items: center;
