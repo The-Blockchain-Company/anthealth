@@ -34,7 +34,7 @@ exports.handler = async (event) => {
       },
       body: {
         model: gptModel,
-        prompt,
+        messages: prompt,
         max_tokens: 4096,
       }
     })
@@ -45,7 +45,7 @@ exports.handler = async (event) => {
     return {
       statusCode: 200,
       body: JSON.stringify({
-        text: body.choices?.[0]?.text,
+        messages: body.choices?.[0]?.message,
       }),
       headers: {
         "Access-Control-Allow-Origin": "*",

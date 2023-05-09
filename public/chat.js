@@ -55,17 +55,17 @@ async function sendMessage(event) {
   sendMessageButton.disabled = true;
 
   const response = await prompt(messageText)
-  addMessage(response.text)
+  addMessage(response.message)
 }
 
-function addMessage(text) {
-  if (!text) {
+function addMessage(message) {
+  if (!message) {
     return;
   }
 
   const message = document.createElement("div");
   message.classList.add("message");
-  message.innerHTML = `<p>${text}</p>`;
+  message.innerHTML = `<p>${message}</p>`;
   document.querySelector(".chat").appendChild(message);
 }
 
