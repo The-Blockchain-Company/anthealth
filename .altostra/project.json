@@ -316,20 +316,10 @@
 				"GPT_API_KEY_PARAM": "gpt-api-key"
 			},
 			"parameters": {
-				"e7bd1e93-6830-49a7-93de-4fa69a48e4e5": {
+				"arn:aws:acm:us-east-1:357957245325:certificate/e7bd1e93-6830-49a7-93de-4fa69a48e4e5": {
 					"paths": [
 						"connections/Domain01/FrontendCDN01/certificate/uri",
 						"connections/Domain01/ApiGateway01/certificate/uri"
-					]
-				},
-				"cdn": {
-					"paths": [
-						"connections/Domain01/FrontendCDN01/hostname"
-					]
-				},
-				"api": {
-					"paths": [
-						"connections/Domain01/ApiGateway01/hostname"
 					]
 				}
 			}
