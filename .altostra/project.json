@@ -61,32 +61,6 @@
 						"from": "InstallationStatus01",
 						"to": "APIKeyParams01"
 					}
-				},
-				"Domain01": {
-					"ApiGateway01": {
-						"type": "connection.domain",
-						"from": "Domain01",
-						"to": "ApiGateway01",
-						"hostname": "api",
-						"certificate": {
-							"type": "cert.stored",
-							"uri": "arn:aws:acm:us-east-1:357957245325:certificate/e7bd1e93-6830-49a7-93de-4fa69a48e4e5"
-						},
-						"subnetIdsField": null,
-						"securityGroupIdsField": null
-					},
-					"FrontendCDN01": {
-						"type": "connection.domain",
-						"from": "Domain01",
-						"to": "FrontendCDN01",
-						"hostname": "cdn",
-						"certificate": {
-							"type": "cert.stored",
-							"uri": "arn:aws:acm:us-east-1:357957245325:certificate/e7bd1e93-6830-49a7-93de-4fa69a48e4e5"
-						},
-						"subnetIdsField": null,
-						"securityGroupIdsField": null
-					}
 				}
 			},
 			"resources": {
@@ -248,14 +222,6 @@
 						"id": "ApiGateway01"
 					},
 					"id": "ApiEndpoint04"
-				},
-				"Domain01": {
-					"type": "resource.domain",
-					"name": "anthealth-quantum",
-					"domainName": "anthealth.quantumone.network",
-					"dnsRegistration": true,
-					"id": "Domain01",
-					"zoneId": "Z10453589CFABY4V0FJM"
 				}
 			},
 			"metadata": {
@@ -299,11 +265,6 @@
 						"AnthealthGpt01": {
 							"x": 384.76409912109375,
 							"y": 410.21925354003906,
-							"z": 0
-						},
-						"Domain01": {
-							"x": -179.50001525878906,
-							"y": 160.1999969482422,
 							"z": 0
 						}
 					}
