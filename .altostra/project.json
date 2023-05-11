@@ -321,6 +321,16 @@
 						"connections/Domain01/FrontendCDN01/certificate/uri",
 						"connections/Domain01/ApiGateway01/certificate/uri"
 					]
+				},
+				"cdn": {
+					"paths": [
+						"connections/Domain01/FrontendCDN01/hostname"
+					]
+				},
+				"api": {
+					"paths": [
+						"connections/Domain01/ApiGateway01/hostname"
+					]
 				}
 			}
 		}
