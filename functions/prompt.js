@@ -25,7 +25,7 @@ exports.handler = async (event) => {
 
   try {
     const { body: bodyStr } = await request(
-      "https://api.openai.com/v1/completions", {
+      "https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
         "Access-Control-Allow-Origin": "*",
