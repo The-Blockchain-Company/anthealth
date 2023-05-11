@@ -70,7 +70,7 @@
 						"hostname": "api",
 						"certificate": {
 							"type": "cert.stored",
-							"uri": "arn:aws:acm:us-east-1:123456789012:certificate/00000000-0000-0000-0000-000000000000"
+							"uri": "arn:aws:acm:us-east-1:357957245325:certificate/e7bd1e93-6830-49a7-93de-4fa69a48e4e5"
 						},
 						"subnetIdsField": null,
 						"securityGroupIdsField": null
@@ -82,7 +82,7 @@
 						"hostname": "cdn",
 						"certificate": {
 							"type": "cert.stored",
-							"uri": "arn:aws:acm:us-east-1:123456789012:certificate/00000000-0000-0000-0000-000000000000"
+							"uri": "arn:aws:acm:us-east-1:357957245325:certificate/e7bd1e93-6830-49a7-93de-4fa69a48e4e5"
 						},
 						"subnetIdsField": null,
 						"securityGroupIdsField": null
@@ -314,14 +314,6 @@
 			"unsafe": false,
 			"globalEnvironmentVariables": {
 				"GPT_API_KEY_PARAM": "gpt-api-key"
-			},
-			"parameters": {
-				"arn:aws:acm:us-east-1:357957245325:certificate/e7bd1e93-6830-49a7-93de-4fa69a48e4e5": {
-					"paths": [
-						"connections/Domain01/FrontendCDN01/certificate/uri",
-						"connections/Domain01/ApiGateway01/certificate/uri"
-					]
-				}
 			}
 		}
 	]
