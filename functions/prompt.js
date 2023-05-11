@@ -30,7 +30,7 @@ exports.handler = async (event) => {
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${process.env[GPT_API_KEY_ENV]}`,
+        Authorization: `Bearer ${apiKey}`,
       },
       body: {
         model: gptModel,
