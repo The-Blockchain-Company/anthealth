@@ -208,7 +208,7 @@
 				},
 				"AnthealthGpt01": {
 					"type": "resource.auth0.application",
-					"name": "antheath-m2m",
+					"name": "antheathGpt",
 					"clientId": "lFE2j1g9agCuS2kM8Bc4hxNlKsfa7tqk",
 					"id": "AnthealthGpt01"
 				},
