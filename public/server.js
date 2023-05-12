@@ -3,7 +3,7 @@ import { baseUrl as apiUrl } from "./api.js";
 // In order to append path using the URL constructor - the "baseURL" must end with a "/"
 const normalized = apiUrl.endsWith("/")
   ? apiUrl
-  : apiUrl + "/"
+  : apiUrl + ""
 
 const baseUrl = new URL(normalized);
 
